@@ -1,5 +1,8 @@
 # AI-Coding-Assistant
 This is an autonomous program that communicates with OpenAI to compile and correct C++ code
+THIS README IS NOT COMPLETE, JUST COPIED FROM A PDF REPORT
+
+
 Devon Coates (48554966)
 Foundations of Modern Computing Final Report
 Overview of Final Program Steps:
