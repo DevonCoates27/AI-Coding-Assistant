@@ -1,0 +1,76 @@
+I am going to send you a block of raw code and errors of that code in JSON format. Correct that code and return it to me in c++ format. Do not output any comments apart from the c++ code in raw text form.
+
+Raw code:
+//
+// Created by Devon Coates on 10/1/23.
+//
+#include <iostream>
+
+int main(){
+    for(int i = 0; i < 10; i++){
+        std::cout << i;
+    }
+    std::cout << endl
+    int x = 3.14;
+    return 0;
+
+    there are more errors here?;
+    what will you do here? will you remove the text?;
+}
+
+
+Errors Json:
+{
+	"File1_Errors_and_Warnings": [
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 10, 
+			"column_number": 22, 
+			"error_description": " expected ';' after expression",
+			"code": "        std::cout << i;\n    }\n    std::cout << endl\n    int x = 3.14;\n    return 0;\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 10, 
+			"column_number": 18, 
+			"error_description": " use of undeclared identifier 'endl'; did you mean 'std::endl'?",
+			"code": "        std::cout << i;\n    }\n    std::cout << endl\n    int x = 3.14;\n    return 0;\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 11, 
+			"column_number": 13, 
+			"error_description": " implicit conversion from 'double' to 'int' changes value from 3.14 to 3 [-Wliteral-conversion]",
+			"code": "    }\n    std::cout << endl\n    int x = 3.14;\n    return 0;\n\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 14, 
+			"column_number": 5, 
+			"error_description": " unknown type name 'there'",
+			"code": "    return 0;\n\n    there are more errors here?;\n    what will you do here? will you remove the text?;\n}\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 14, 
+			"column_number": 14, 
+			"error_description": " expected ';' at end of declaration",
+			"code": "    return 0;\n\n    there are more errors here?;\n    what will you do here? will you remove the text?;\n}\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 15, 
+			"column_number": 5, 
+			"error_description": " unknown type name 'what'",
+			"code": "\n    there are more errors here?;\n    what will you do here? will you remove the text?;\n}\n"
+		},
+		{
+			"file_path": "./Code/JobSystemCode/CodeToTest/file1.cpp",
+			"line_number": 15, 
+			"column_number": 14, 
+			"error_description": " expected ';' at end of declaration",
+			"code": "\n    there are more errors here?;\n    what will you do here? will you remove the text?;\n}\n"
+		}
+	]
+}
+

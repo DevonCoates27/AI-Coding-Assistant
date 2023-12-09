@@ -1,0 +1,18 @@
+clang++ -g -std=c++14 -o exec ./Code/JobSystemCode/CodeToTest/file1.cpp -Wall
+./Code/JobSystemCode/CodeToTest/file1.cpp:8:13: warning: implicit conversion from 'double' to 'int' changes value from 3.14 to 3 [-Wliteral-conversion]
+    int x = 3.14;
+        ~   ^~~~
+./Code/JobSystemCode/CodeToTest/file1.cpp:8:9: warning: unused variable 'x' [-Wunused-variable]
+    int x = 3.14;
+        ^
+2 warnings generated.
+clang++ -g -std=c++14 -o exec ./Code/JobSystemCode/CodeToTest/file1.cpp -Wall
+./Code/JobSystemCode/CodeToTest/file1.cpp:8:13: warning: implicit conversion from 'double' to 'int' changes value from 3.14 to 3 [-Wliteral-conversion]
+    int x = 3.14;
+        ~   ^~~~
+./Code/JobSystemCode/CodeToTest/file1.cpp:8:9: warning: unused variable 'x' [-Wunused-variable]
+    int x = 3.14;
+        ^
+2 warnings generated.
+
+0

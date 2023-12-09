@@ -1,0 +1,12 @@
+digraph G{ 
+    A[shape=circle, label="compileJob,0x0000000F"];
+    B[shape=circle, label="promptJob,0x0000000F"];
+    C[shape=circle, label="customJob,0x0000000F"];
+
+    A->B;
+    B->C;
+
+    C->A;
+    A->B;
+    B->C;
+}
